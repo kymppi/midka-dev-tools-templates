@@ -3,7 +3,7 @@ description = "A template for a rust project"
 language = ["Rust", "TypeScript", "JavaScript"]
 
 [init_commands]
-rust = "cargo new . --bin"
+rust = "cargo init . --bin"
 
 [install_commands]
 typescript = "npm install"
