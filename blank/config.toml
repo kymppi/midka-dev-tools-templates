@@ -1,3 +1,10 @@
 name = "Blank"
 description = "A template for a rust project"
 language = ["Rust", "TypeScript", "JavaScript"]
+
+[init_command]
+rust = "cargo new"
+
+[install_command]
+typescript = "npm install"
+javascript = "npm install"
