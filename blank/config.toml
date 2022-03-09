@@ -5,6 +5,6 @@ language = ["Rust", "TypeScript", "JavaScript"]
 [init_commands]
 rust = "cargo new"
 
-[install_command]
+[install_commands]
 typescript = "npm install"
 javascript = "npm install"
