@@ -1,1 +1,1 @@
-templates = ["Blank"]
+templates = ["Blank", "RestAPI", "Lib"]
