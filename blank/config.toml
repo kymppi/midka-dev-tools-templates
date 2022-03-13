@@ -1,5 +1,5 @@
 name = "Blank"
-description = "A template for a rust project"
+description = "A template for blank projects"
 language = ["Rust", "TypeScript", "JavaScript"]
 
 [init_commands]
