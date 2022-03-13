@@ -1,0 +1,8 @@
+name = "Discord Bot"
+description = "A template for discord bots"
+language = ["Rust"]
+
+[init_commands]
+rust = "cargo init . --bin"
+
+[install_commands]
