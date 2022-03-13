@@ -1,1 +1,1 @@
-templates = ["Blank", "RestAPI", "Lib"]
+templates = ["Blank", "Discord-Bot"]
