@@ -1,0 +1,8 @@
+name = "DNSConfig"
+description = "A template for dnsconfig"
+language = ["JavaScript"]
+
+[init_commands]
+
+
+[install_commands]
