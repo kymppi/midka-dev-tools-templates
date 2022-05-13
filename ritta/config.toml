@@ -1,0 +1,10 @@
+name = "Ritta"
+description = "A template for Ritta microservices"
+language = ["TypeScript"]
+args = [{ id = "MICROSERVICE_NAME", name = "Microservice name", example = "Notifications" }]
+
+[init_commands]
+typescript = "node use_template.js $MICROSERVICE_NAME"
+
+[install_commands]
+typescript = "yarn install"
