@@ -30,7 +30,7 @@ async function bootstrap() {
           new transports.File({ filename: 'logs/all.log' }),
         ],
       }),
-    }
+    },
   );
 
   app
