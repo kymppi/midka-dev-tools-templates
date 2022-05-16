@@ -1,7 +1,10 @@
 import { config } from 'dotenv';
 config();
 import { NestFactory } from '@nestjs/core';
+import { WinstonModule } from 'nest-winston';
+import { transports } from 'winston';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
+import { consoleFormat } from './logger.format';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
@@ -18,6 +21,15 @@ async function bootstrap() {
           durable: true,
         },
       },
+      logger: WinstonModule.createLogger({
+        defaultMeta: { service: 'users', enviroment: process.env.NODE_ENV },
+        transports: [
+          new transports.Console({
+            format: consoleFormat,
+          }),
+          new transports.File({ filename: 'logs/all.log' }),
+        ],
+      }),
     },
   );
 
