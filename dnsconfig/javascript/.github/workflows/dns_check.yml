@@ -3,7 +3,7 @@ name: Check DNS
 on:
   pull_request_target:
     paths:
-      - 'domains/*.yml'
+      - 'domains/*.js'
       - 'dnsconfig.js'
   workflow_dispatch:
 
