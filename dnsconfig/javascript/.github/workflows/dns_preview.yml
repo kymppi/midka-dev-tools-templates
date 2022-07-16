@@ -4,7 +4,7 @@ on:
   pull_request_target:
     paths:
       - 'dnsconfig.js'
-      - 'domains/*.yml'
+      - 'domains/*.js'
   workflow_dispatch:
 
 jobs:
